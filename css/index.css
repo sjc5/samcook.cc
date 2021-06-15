@@ -35,16 +35,16 @@
 }
 
 body {
-  background: rgb(24, 21, 21);
-  max-width: 23em;
+  background: rgb(14, 11, 11);
+  max-width: 28em;
   margin: 1.7em 1em;
   padding: 0 1em 1em;
   color: #ddd;
   font-family: 'Ubuntu Mono', um, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 24px;
-  line-height: 1.6;
+  font-size: 23px;
+  line-height: 120%;
 }
 
 header {
