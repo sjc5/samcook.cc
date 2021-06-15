@@ -6,7 +6,7 @@ section: Blog
 ---
 <article>
 
-<h2 class=post-header>{{ title }}</h2>
+<h2 class="post-header" id="{{ title | slug }}">{{ title }} <a class="direct-link" href="#{{ title | slug }}">#</a></h2>
 
 <div class="post-meta">
 <span class="post-date"> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span>

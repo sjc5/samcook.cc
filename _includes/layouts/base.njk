@@ -37,7 +37,7 @@
 
 <body>
   <header>
-    <h1 class="logo"><a href="{{ '/' | url }}">⛰️ {{ metadata.title }}</a>{% if section %}<span> » <mark>{{ section }}</mark></span>{% endif %}
+    <h1 class="logo"><a href="{{ '/' | url }}">⛰️ {{ metadata.title }}</a>{% if section %}<span class="logo-extend"> » <mark>{{ section }}</mark></span>{% endif %}
     </h1>
     <nav>
       {% if (templateClass !== "tmpl-post") and (section !== "Blog") %}
