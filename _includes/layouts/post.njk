@@ -28,7 +28,7 @@ section: Blog
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 {%- if nextPost or previousPost %}
 <div class="blog-nav">
-  {%- if previousPost %}<a href="{{ previousPost.url | url }}">« Previous</a>{% else %}<a href="{{ '/' | url }}">« home</a>{% endif %}
+  {%- if previousPost %}<a href="{{ previousPost.url | url }}">« Previous</a>{% else %}<a href="{{ '/' | url }}">« Home</a>{% endif %}
   {%- if nextPost %}<a href="{{ nextPost.url | url }}">Next »</a>{% endif %}
 </div>
 {%- endif %}
