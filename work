@@ -1,0 +1,24 @@
+---
+layout: layouts/home.njk
+title: Work
+permalink: false
+---
+<h2><mark>Portfolio</mark></h2>
+
+### TalkJot App
+- I created <a href="https://talkjot.co" target="_blank">TalkJot</a>, a privacy-friendly React Native app that makes it easy to email yourself notes using your voice.
+- It's spartan (by design), but surprisingly useful when you're out and about.</li>
+- It's live on the <a href="https://play.google.com/store/apps/details?id=com.talkjot" target="_blank">Google Play Store</a> and the <a href="https://apps.apple.com/us/app/talkjot-voice-to-email-notes/id1499580999" target="_blank">Apple App Store</a> if you want to check it out.
+---
+
+### Monty Hall Game
+- I built a <a href="https://montyhall.io" target="_blank">Monty Hall Problem Simulator</a> (loosely based on the old *Let's Make a Deal* game show) using 100% vanilla HTML, CSS and JavaScript.
+- It's a fun way to learn about the classic, counter-intuitive statistics puzzle that has haunted mathematicians for decades.
+- Although the rules of play are simple, the game logic, conditional rendering and statistics tracking were rather complicated to implement. If you spot any bugs, please <a href="/email/">let me know</a>!
+---
+
+### This Site
+- I built this site using 11ty and spent a lot of time customizing the look and feel to maximize (a)&nbsp;responsiveness, (b)&nbsp;readability, (c)&nbsp;speed and (d)&nbsp;navigability. In other words, I wanted to make this site as non-annoying as possible.
+- Overall, it's a pretty good representation of my personal design preferences (for a site like this, that is).
+- One thing you will notice – especially when clicking around in the <a href="{{ "/blog/" | url }}">blog</a> – is the context-dependence of the navigation menus (in both the header and footer). This took a decent amount of conditional logic in my 11ty layouts to accomplish, and I'm really happy with the result.
+- If you have any usability or accessibility feedback, please <a href="/email/">let me know</a>.

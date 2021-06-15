@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metadata.title }} {% if title !== metadata.title %}– {{ section }} {% endif %}{% if section == "Blog" %}– {{ title }} {% endif %}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+  <link rel="alternate" href="{{ metadata.url }}{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  <link rel="alternate" href="{{ metadata.url }}{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+  <link rel="apple-touch-icon" sizes="400x400" href="/img/prof.jpg">
+  <link rel="icon" type="image/png" sizes="400x400" href="/img/favicon.png">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ActiveFog" />
+  <meta name="twitter:creator" content="@ActiveFog">
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:image" content="{{ metadata.url }}/img/fog.jpg" />
+  <meta name="twitter:description" content="{{ description or metadata.description }}" />
+  {% if templateClass == "tmpl-post" %}
+  <meta property="og:type" content="article">
+  <meta property="article:author" content="{{ metadata.author.name }}">
+  <meta property="article:published_time" content="{{ page.date | htmlDateString }}">
+  {%- for tag in tags | filterTagList -%}
+  {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+  <meta property="article:tag" content="{{ tag }}">
+  {% endfor %}
+  {% else %}
+  <meta property="og:type" content="website">
+  {% endif %}
+  <meta property="og:description" content="{{ description or metadata.description }}">
+  <meta property="og:site_name" content="{{ metadata.title }}">
+  <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:image" content="{{ metadata.url }}/img/fog.jpg">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><a href="{{ '/' | url }}">⛰️ {{ metadata.title }}</a>{% if section %}<span> » <mark>{{ section }}</mark></span>{% endif %}
+    </h1>
+    <nav>
+      {% if (templateClass !== "tmpl-post") and (section !== "Blog") %}
+        {% if page.url !== "/" %}
+          <a href="{{ '/' | url }}">« Home</a>
+        {% endif %}
+        {%- for entry in collections.all | eleventyNavigation %}
+          {% if entry.url !== page.url %}
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          {% endif %}
+        {%- endfor %}
+      {% elseif (page.url == "/blog/") %}
+        <a href="{{ '/' | url }}">« Home</a>
+        <a href="{{ '/tags/' | url }}">Tags</a>
+        <a href="{{ '/subscribe' | url }}">Subscribe</a>
+      {% elseif (title == "Tags") %}
+        <a href="{{ '/' | url }}">« Home</a>
+        <a href="{{ '/blog' | url }}">Archive</a>
+        <a href="{{ '/subscribe' | url }}">Subscribe</a>
+      {% else %}
+        <a href="{{ '/' | url }}">« Home</a>
+        <a href="{{ '/blog' | url }}">Archive</a>
+        <a href="{{ '/tags/' | url }}">Tags</a>
+        {% if (page.url !== "/subscribe/") and (page.url !== "/subscribe-message/") %}
+          <a href="{{ '/subscribe' | url }}">Subscribe</a>
+        {% endif %}
+      {% endif %}
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {% if (layout == "layouts/home.njk" and (title !== metadata.title)) or (layout == "layouts/post.njk" and previousPost) or (layout == "layouts/other.njk") %}
+  <footer class="footer-nav">
+    <a href="{{ '/' | url }}">« Home</a>
+  </footer>
+  {% endif %}
+
+  <!-- Current page: {{ page.url | url }} -->
+</body>
+
+</html>

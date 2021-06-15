@@ -1,0 +1,21 @@
+{
+  "title": "sjc",
+  "url": "https://sjc.sh",
+  "language": "en",
+  "description": "sjc's website",
+  "feed": {
+    "subtitle": "I don't always write, but when I do, I do it here.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://sjc.sh"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://sjc.sh/feed/feed.json"
+  },
+  "author": {
+    "name": "sjc",
+    "email": "email@sjc.sh",
+    "url": "https://sjc.sh"
+  }
+}

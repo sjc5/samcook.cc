@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+permalink: /blog/{{ title | slug }}/
+section: Blog
+---
+<article>
+
+<h2 class=post-header>{{ title }}</h2>
+
+<div class="post-meta">
+<span class="post-date"> <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span>
+<span class="tags-list">
+{%- for tag in tags | filterTagList -%}
+  {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+  <span class="tag"><a href="{{ tagUrl | url }}"><span class="hashtag">#</span>{{ tag }}</a></span>
+{% endfor %}
+</span>
+</div>
+
+{{ content | safe }}
+
+</article>
+
+{% include "subscribe-button.njk" %}
+
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<div class="blog-nav">
+  {%- if previousPost %}<a href="{{ previousPost.url | url }}">« prior post</a>{% else %}<a href="{{ '/' | url }}">« home</a>{% endif %}
+  {%- if nextPost %}<a href="{{ nextPost.url | url }}">next post »</a>{% endif %}
+</div>
+{%- endif %}
