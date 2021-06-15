@@ -372,6 +372,10 @@ hr {
     margin-top: 1.35em;
   }
 
+  nav, .footer-nav, .blog-nav, .browse-by-tag {
+    font-size: 0.8em;
+  }
+
   nav {
     margin-top: 1em;
   }
