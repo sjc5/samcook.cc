@@ -161,7 +161,7 @@ tt {
 }
 
 .logo-extend {
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
 
 h1, h2, h3, h4, h5 {
@@ -345,7 +345,7 @@ hr {
 @media screen and (max-width: 520px) {
   body {
     font-size: 21px;
-    margin: 0.5em auto;
+    margin: 1.5em auto;
   }
 
   header {
@@ -373,7 +373,7 @@ hr {
   }
 
   nav, .footer-nav, .blog-nav, .browse-by-tag {
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
 
   nav {
@@ -384,6 +384,5 @@ hr {
 @media screen and (max-width: 360px) {
   body {
     font-size: 19px;
-    margin: 0;
   }
 }
