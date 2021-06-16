@@ -5,7 +5,7 @@ title: sjc
 
 Hello, world. 👋
 
-I'm sjc, a web developer, indie hacker, privacy enthusiast and electric guitarist.
+I'm sjc, a web developer and designer, indie hacker, privacy enthusiast and electric guitarist.
 
 My handle across the web is <a href="https://keybase.io/activefog" target="_blank">activefog</a>.
 
