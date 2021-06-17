@@ -26,6 +26,6 @@ section: Links
     <a href="{{ "/contact/" | url }}">Contact Info</a>
   </li>
   <li class="arrow-list">
-    <a href="{{ "/feed/feed.xml" | url }}" target="_blank">RSS Feed</a>
+    <a href="{{ "/feed/feed.xml" | url }}" target="_blank">Blog RSS Feed</a>
   </li>
 </ul>
