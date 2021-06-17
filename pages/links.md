@@ -23,7 +23,7 @@ section: Links
     <a href="https://news.ycombinator.com/user?id=activefog" target="_blank">Hacker News</a>
   </li>
   <li class="arrow-list">
-    <a href="{{ "/email/" | url }}">Email</a>
+    <a href="{{ "/contact/" | url }}">Contact Info</a>
   </li>
   <li class="arrow-list">
     <a href="{{ "/feed/feed.xml" | url }}" target="_blank">RSS Feed</a>
