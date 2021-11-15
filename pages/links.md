@@ -11,16 +11,10 @@ section: Links
 
 <ul>
   <li class="arrow-list">
-    <a href="https://twitter.com/activefog" target="_blank">Twitter</a>
+    <a href="https://twitter.com/telekstr" target="_blank">Twitter</a>
   </li>
   <li class="arrow-list">
-    <a href="https://github.com/activefog" target="_blank">GitHub</a>
-  </li>
-  <li class="arrow-list">
-    <a href="https://keybase.io/activefog" target="_blank">Keybase</a>
-  </li>
-  <li class="arrow-list">
-    <a href="https://news.ycombinator.com/user?id=activefog" target="_blank">Hacker News</a>
+    <a href="https://github.com/telekstr" target="_blank">GitHub</a>
   </li>
   <li class="arrow-list">
     <a href="{{ "/contact/" | url }}">Contact Info</a>
