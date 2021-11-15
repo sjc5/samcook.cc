@@ -5,9 +5,7 @@ title: sjc
 
 Hello, world. 👋
 
-I'm sjc, a web developer and designer, indie hacker, privacy enthusiast and electric guitarist.
-
-My handle across the web is <a href="https://keybase.io/activefog" target="_blank">activefog</a>.
+I'm Sam Cook, a web developer and designer, indie hacker, privacy enthusiast and electric guitarist.
 
 <ul>
   <li class="arrow-list">
@@ -17,7 +15,7 @@ My handle across the web is <a href="https://keybase.io/activefog" target="_blan
     Read <a href="{{ 'blog/' | url }}">my blog</a>.
   </li>
   <li class="arrow-list">
-    Check out <a href="https://github.com/activefog" target="_blank">my projects</a>.
+    Check out <a href="https://github.com/telekstr" target="_blank">my projects</a>.
   </li>
   <li class="arrow-list">
     Visit <a href="{{ 'links/' | url }}">my links</a>.
