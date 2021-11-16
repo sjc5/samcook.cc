@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 permalink: /links/
-description: sjc's web links and contact information
+description: Sam Cook's web links and contact information
 eleventyNavigation:
   key: Links
   order: 3

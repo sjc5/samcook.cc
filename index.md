@@ -1,11 +1,11 @@
 ---
 layout: layouts/home.njk
-title: sjc
+title: Sam Cook
 ---
 
 Hello, world. 👋
 
-I'm Sam Cook, a web developer and designer, indie hacker, privacy enthusiast and electric guitarist.
+I'm Sam Cook, a React developer, UI designer, web3 enthusiast and electric guitarist.
 
 <ul>
   <li class="arrow-list">
@@ -22,4 +22,4 @@ I'm Sam Cook, a web developer and designer, indie hacker, privacy enthusiast and
   </li>
 </ul>
 
-<img src="../img/prof.jpg" alt="sjc profile pic">
+<img src="../img/prof.jpg" alt="Sam Cook">

@@ -1,5 +1,5 @@
 {
-  "name": "sjc",
+  "name": "sjc.sh",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",

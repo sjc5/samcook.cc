@@ -1,8 +1,8 @@
 {
-  "title": "sjc",
+  "title": "Sam Cook",
   "url": "https://sjc.sh",
   "language": "en",
-  "description": "sjc's website",
+  "description": "Sam Cook's website",
   "feed": {
     "subtitle": "I don't always write, but when I do, I do it here.",
     "filename": "feed.xml",
@@ -14,7 +14,7 @@
     "url": "https://sjc.sh/feed/feed.json"
   },
   "author": {
-    "name": "sjc",
+    "name": "Sam Cook",
     "email": "email@sjc.sh",
     "url": "https://sjc.sh"
   }

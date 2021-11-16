@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 permalink: /blog/
-description: sjc's blog
+description: Sam Cook's blog
 eleventyNavigation:
   key: Blog
   order: 4

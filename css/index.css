@@ -151,7 +151,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px calc(12px + 2vw);
+  padding: 12px calc(12px + 1vw - 0.35rem) 12px calc(12px + 1vw);
   background-color: var(--overlay);
 }
 
@@ -190,7 +190,7 @@ li {
 }
 
 nav {
-  font-size: 0.7em;
+  font-size: 0.87rem;
   line-height: 1.7em;
   display: flex;
   align-items: center;
@@ -296,17 +296,17 @@ tt {
 }
 
 .logo {
-  font-size: 0.9em;
+  font-size: 1rem;
   margin: 0;
   text-decoration: none;
-}
-
-header > a {
-  border: none;
+  text-transform: uppercase;
+  /* font-weight: normal; */
+  letter-spacing: 0.07em;
 }
 
 .logo-extend {
   font-size: 0.87rem;
+  opacity: 0.87;
 }
 
 h1,
@@ -426,26 +426,6 @@ input[type="email"] {
   text-align: center;
 }
 
-.button {
-  font-family: "Ubuntu Mono", um, monospace;
-  font-size: 0.7em;
-  border: 1px solid var(--fg);
-  background-color: transparent;
-  color: var(--fg);
-  border-radius: 3px;
-  height: 35px;
-  display: block;
-  min-width: 100%;
-  text-align: center;
-}
-
-.button:hover {
-  cursor: pointer;
-  background-color: rgb(17, 14, 14);
-  border: 1px solid #eee;
-  color: #eee;
-}
-
 hr {
   border: 0;
   height: 0;
@@ -471,6 +451,7 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-bottom: 1.3rem;
   }
 
   nav {

@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 permalink: /about/
-description: About sjc
+description: About Sam Cook
 eleventyNavigation:
   key: About
   order: 1
