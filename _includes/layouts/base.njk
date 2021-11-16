@@ -39,9 +39,6 @@
     <link rel="prefetch" href="{{ post.url | url }}" as="document" />
     {% endfor %}
 
-    <link rel="prefetch" href="{{ previousPost.url | url }}" as="document" />
-    <link rel="prefetch" href="{{ nextPost.url | url }}" as="document" />
-
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@telekstr" />
     <meta name="twitter:creator" content="@telekstr" />
@@ -134,9 +131,6 @@
         {{ content | safe }}
       </div>
     </main>
-
-    {%- set nextPost = collections.posts | getNextCollectionItem(page) %} {%-
-    set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 
     <!-- Current page: {{ page.url | url }} -->
     <script>
