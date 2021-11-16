@@ -31,7 +31,16 @@
     {%- for entry in collections.all | eleventyNavigation %}
     <link rel="prefetch" href="{{ entry.url | url }}" as="document" />
     {%- endfor %}
-    <link rel="prefetch" href="/tags/" as="document" />
+    <link rel="prefetch" href="{{ '/tags/' | url }}" as="document" />
+    <link rel="prefetch" href="{{ '/contact/' | url }}" as="document" />
+    <link rel="prefetch" href="{{ '/feed/feed.xml' | url }}" as="document" />
+
+    {% for post in collections.posts %}
+    <link rel="prefetch" href="{{ post.url | url }}" as="document" />
+    {% endfor %}
+
+    <link rel="prefetch" href="{{ previousPost.url | url }}" as="document" />
+    <link rel="prefetch" href="{{ nextPost.url | url }}" as="document" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@telekstr" />
@@ -87,24 +96,24 @@
       <nav>
         {% if (templateClass !== "tmpl-post") and (section !== "Blog") %} {% if
         page.url !== "/" %}
-        <a href="{{ '/' | url }}">« Home</a>
+        <a href="{{ '/' | url }}">Home</a>
         {% endif %} {%- for entry in collections.all | eleventyNavigation %} {%
         if entry.url !== page.url %}
         <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         {% endif %} {%- endfor %} {% elseif (page.url == "/blog/") %}
-        <a href="{{ '/' | url }}">« Home</a>
+        <a href="{{ '/' | url }}">Home</a>
         <a href="{{ '/tags/' | url }}">Tags</a>
         <a href="{{ '/feed/feed.xml' | url }}" target="_blank" rel="noreferrer"
           >RSS</a
         >
         {% elseif (title == "Tags") %}
-        <a href="{{ '/' | url }}">« Home</a>
+        <a href="{{ '/' | url }}">Home</a>
         <a href="{{ '/blog' | url }}">Archive</a>
         <a href="{{ '/feed/feed.xml' | url }}" target="_blank" rel="noreferrer"
           >RSS</a
         >
         {% else %}
-        <a href="{{ '/' | url }}">« Home</a>
+        <a href="{{ '/' | url }}">Home</a>
         <a href="{{ '/blog' | url }}">Archive</a>
         <a href="{{ '/tags/' | url }}">Tags</a>
         {% if (page.url !== "/feed/feed.xml") %}
@@ -126,8 +135,8 @@
       </div>
     </main>
 
-    {%- set previousPost = collections.posts | getPreviousCollectionItem(page)
-    %}
+    {%- set nextPost = collections.posts | getNextCollectionItem(page) %} {%-
+    set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 
     <!-- Current page: {{ page.url | url }} -->
     <script>

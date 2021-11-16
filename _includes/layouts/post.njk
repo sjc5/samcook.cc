@@ -5,41 +5,41 @@ permalink: /blog/{{ title | slug }}/
 section: Blog
 ---
 
-<article>
-  <h2 class="post-header" id="{{ title | slug }}">
-    {{ title }} <a class="direct-link" href="#{{ title | slug }}">#</a>
-  </h2>
+<div class="post-wrapper">
+  <article>
+    <h2 class="post-header" id="{{ title | slug }}">
+      {{ title }} <a class="direct-link" href="#{{ title | slug }}">#</a>
+    </h2>
 
-  <div class="post-meta">
-    <span class="post-date">
-      <time datetime="{{ page.date | htmlDateString }}">{{
-        page.date | readableDate
-      }}</time></span
-    >
-    <span class="tags-list">
-      {%- for tag in tags | filterTagList -%} {%- set tagUrl %}/tags/{{
-        tag | slug
-      }}/{% endset -%}
-      <span class="tag"
-        ><a href="{{ tagUrl | url }}"
-          ><span class="hashtag">#</span>{{ tag }}</a
-        ></span
+    <div class="post-meta">
+      <span class="post-date">
+        <time datetime="{{ page.date | htmlDateString }}">{{
+          page.date | readableDate
+        }}</time></span
       >
-      {% endfor %}
-    </span>
+      <span class="tags-list">
+        {%- for tag in tags | filterTagList -%} {%- set tagUrl %}/tags/{{
+          tag | slug
+        }}/{% endset -%}
+        <span class="tag"
+          ><a href="{{ tagUrl | url }}"
+            ><span class="hashtag">#</span>{{ tag }}</a
+          ></span
+        >
+        {% endfor %}
+      </span>
+    </div>
+
+    {{ content | safe }}
+  </article>
+
+  {%- set nextPost = collections.posts | getNextCollectionItem(page) %} {%- set
+  previousPost = collections.posts | getPreviousCollectionItem(page) %} {%- if
+  nextPost or previousPost %}
+  <div class="blog-nav">
+    {%- if previousPost %}<a href="{{ previousPost.url | url }}">« Previous</a
+    >{% else %}<a href="{{ '/blog' | url }}">« Archive</a>{% endif %} {%- if
+    nextPost %}<a href="{{ nextPost.url | url }}">Next »</a>{% endif %}
   </div>
-
-  {{ content | safe }}
-</article>
-
-{%- set nextPost = collections.posts | getNextCollectionItem(page) %} {%- set
-previousPost = collections.posts | getPreviousCollectionItem(page) %} {%- if
-nextPost or previousPost %}
-<div class="blog-nav">
-  {%- if previousPost %}<a href="{{ previousPost.url | url }}">« Previous</a>{%
-  else %}<a href="{{ '/' | url }}">« Home</a>{% endif %} {%- if nextPost %}<a
-    href="{{ nextPost.url | url }}"
-    >Next »</a
-  >{% endif %}
+  {%- endif %}
 </div>
-{%- endif %}
