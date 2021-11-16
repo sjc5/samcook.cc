@@ -33,6 +33,7 @@
   <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:image" content="{{ metadata.url }}/img/fog.jpg">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 </head>
 
 <body class="dark">
@@ -48,7 +49,7 @@
         » <mark>{{ section }}</mark>
       </span>{% endif %}
     </div>
-    <button id="themeButtonMobile" onclick="toggleTheme()"></button>
+    <button id="themeButtonMobile" onclick="toggleTheme()" aria-label="toggle theme"></button>
   </div>
     
     <nav>
@@ -64,20 +65,20 @@
       {% elseif (page.url == "/blog/") %}
         <a href="{{ '/' | url }}">« Home</a>
         <a href="{{ '/tags/' | url }}">Tags</a>
-        <a href="{{ '/feed/feed.xml' | url }}" target="_blank">RSS</a>
+        <a href="{{ '/feed/feed.xml' | url }}" target="_blank" rel="noreferrer">RSS</a>
       {% elseif (title == "Tags") %}
         <a href="{{ '/' | url }}">« Home</a>
         <a href="{{ '/blog' | url }}">Archive</a>
-        <a href="{{ '/feed/feed.xml' | url }}" target="_blank">RSS</a>
+        <a href="{{ '/feed/feed.xml' | url }}" target="_blank" rel="noreferrer">RSS</a>
       {% else %}
         <a href="{{ '/' | url }}">« Home</a>
         <a href="{{ '/blog' | url }}">Archive</a>
         <a href="{{ '/tags/' | url }}">Tags</a>
         {% if (page.url !== "/feed/feed.xml") %}
-          <a href="{{ '/feed/feed.xml' | url }}" target="_blank">RSS</a>
+          <a href="{{ '/feed/feed.xml' | url }}" target="_blank" rel="noreferrer">RSS</a>
         {% endif %}
       {% endif %}
-      <button id="themeButtonDesktop" onclick="toggleTheme()"></button>
+      <button id="themeButtonDesktop" onclick="toggleTheme()" aria-label="toggle theme"></button>
     </nav>
   </header>
 

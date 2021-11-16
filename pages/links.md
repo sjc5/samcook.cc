@@ -11,15 +11,15 @@ section: Links
 
 <ul>
   <li class="arrow-list">
-    <a href="https://twitter.com/telekstr" target="_blank">Twitter</a>
+    <a href="https://twitter.com/telekstr" target="_blank" rel="noreferrer">Twitter</a>
   </li>
   <li class="arrow-list">
-    <a href="https://github.com/telekstr" target="_blank">GitHub</a>
+    <a href="https://github.com/telekstr" target="_blank" rel="noreferrer">GitHub</a>
   </li>
   <li class="arrow-list">
     <a href="{{ "/contact/" | url }}">Contact Info</a>
   </li>
   <li class="arrow-list">
-    <a href="{{ "/feed/feed.xml" | url }}" target="_blank">Blog RSS Feed</a>
+    <a href="{{ "/feed/feed.xml" | url }}" target="_blank" rel="noreferrer">Blog RSS Feed</a>
   </li>
 </ul>
