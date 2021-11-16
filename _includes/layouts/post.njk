@@ -22,8 +22,6 @@ section: Blog
 
 </article>
 
-{% include "subscribe-button.njk" %}
-
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 {%- if nextPost or previousPost %}

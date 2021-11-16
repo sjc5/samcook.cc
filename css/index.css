@@ -1,45 +1,77 @@
+/* jetbrains-mono-300 - latin */
 @font-face {
-  font-family: um;
+  font-family: "JetBrains Mono";
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/um.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  font-weight: 300;
+  src: url("fonts/jetbrains-mono-v6-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("fonts/jetbrains-mono-v6-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/jetbrains-mono-v6-latin-300.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("fonts/jetbrains-mono-v6-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("fonts/jetbrains-mono-v6-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("fonts/jetbrains-mono-v6-latin-300.svg#JetBrainsMono") format("svg"); /* Legacy iOS */
 }
 
+/* jetbrains-mono-700 - latin */
 @font-face {
-  font-family: um;
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/um-ital.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: um;
+  font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: url(fonts/um-bold.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  src: url("fonts/jetbrains-mono-v6-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("fonts/jetbrains-mono-v6-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/jetbrains-mono-v6-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("fonts/jetbrains-mono-v6-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("fonts/jetbrains-mono-v6-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("fonts/jetbrains-mono-v6-latin-700.svg#JetBrainsMono") format("svg"); /* Legacy iOS */
 }
 
+/* jetbrains-mono-300italic - latin */
 @font-face {
-  font-family: um;
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 300;
+  src: url("fonts/jetbrains-mono-v6-latin-300italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("fonts/jetbrains-mono-v6-latin-300italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/jetbrains-mono-v6-latin-300italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("fonts/jetbrains-mono-v6-latin-300italic.woff") format("woff"),
+    /* Modern Browsers */ url("fonts/jetbrains-mono-v6-latin-300italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("fonts/jetbrains-mono-v6-latin-300italic.svg#JetBrainsMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/* jetbrains-mono-700italic - latin */
+@font-face {
+  font-family: "JetBrains Mono";
   font-style: italic;
   font-weight: 700;
-  font-display: swap;
-  src: url(fonts/um-bold-ital.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  src: url("fonts/jetbrains-mono-v6-latin-700italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("fonts/jetbrains-mono-v6-latin-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/jetbrains-mono-v6-latin-700italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("fonts/jetbrains-mono-v6-latin-700italic.woff") format("woff"),
+    /* Modern Browsers */ url("fonts/jetbrains-mono-v6-latin-700italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("fonts/jetbrains-mono-v6-latin-700italic.svg#JetBrainsMono")
+      format("svg"); /* Legacy iOS */
 }
 
 * {
@@ -49,6 +81,12 @@
   background-color: transparent;
   outline: none;
   border: none;
+  color: var(--fg);
+  font-family: "JetBrains Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 150%;
+  letter-spacing: 0.02em;
 }
 
 body {
@@ -83,9 +121,14 @@ button:active {
   opacity: 1;
 }
 
-#themeButton {
+#themeButtonDesktop,
+#themeButtonMobile {
   border-radius: 50%;
   padding: 0.5rem;
+}
+
+#themeButtonMobile {
+  display: none;
 }
 
 html,
@@ -93,6 +136,7 @@ body {
   height: 100%;
   width: 100vw;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -100,32 +144,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: calc(16px + 0.5vw + 0.5vh);
-}
-
-body,
-body * {
-  color: var(--fg);
-  font-family: "Ubuntu Mono", um, monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 120%;
+  font-size: calc(16px + 0.3vw + 0.3vh);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 3.7rem;
-  padding: 0 calc(12px + 2vw);
+  padding: 12px calc(12px + 2vw);
   background-color: var(--overlay);
+}
+
+.logo,
+.logo-extend {
+  white-space: nowrap;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 main {
   height: 100%;
   width: 100%;
   padding: calc(2vw + 2vh) 7vw;
-  overflow: auto;
+  overflow-y: auto;
   align-self: center;
 }
 
@@ -252,7 +297,6 @@ tt {
 
 .logo {
   font-size: 0.9em;
-  font-weight: normal;
   margin: 0;
   text-decoration: none;
 }
@@ -262,7 +306,7 @@ header > a {
 }
 
 .logo-extend {
-  font-size: 0.75em;
+  font-size: 0.87rem;
 }
 
 h1,
@@ -402,14 +446,6 @@ input[type="email"] {
   color: #eee;
 }
 
-.subscribe {
-  margin: 2em 0;
-}
-
-.allposts-subscribe {
-  margin-top: 0;
-}
-
 hr {
   border: 0;
   height: 0;
@@ -434,11 +470,23 @@ hr {
   header {
     flex-direction: column;
     align-items: flex-start;
-    height: 7.3rem;
     justify-content: center;
   }
 
   nav {
     margin-top: 0.3rem;
+  }
+
+  .header-wrapper {
+    flex-grow: 0;
+    width: 100%;
+  }
+
+  #themeButtonDesktop {
+    display: none;
+  }
+
+  #themeButtonMobile {
+    display: flex;
   }
 }
