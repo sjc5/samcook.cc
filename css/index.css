@@ -168,19 +168,24 @@ header {
 main {
   height: 100%;
   width: 100%;
-  padding: calc(2vw + 2vh) 7vw;
+  padding: calc(1vw + 1vh) 7vw;
   overflow-y: auto;
   align-self: center;
+  display: flex;
+  /* background-color: black; */
 }
 
 .content-wrapper {
+  width: 100%;
   max-width: 43rem;
-  margin: 2rem auto;
+  margin: auto;
+  padding: calc(1rem + 1vh + 1vw) 0 calc(1.25rem + 1.25vh + 1.25vw);
+  /* background-color: grey; */
 }
 
 p,
 ul {
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
 }
 
 p,
@@ -315,7 +320,7 @@ h3,
 h4,
 h5 {
   line-height: 1.15;
-  margin: 1.25em 0;
+  margin: 0 0 1.25em;
 }
 
 h1 {
@@ -457,11 +462,15 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0.3rem;
   }
 
   nav {
-    margin: 0.3rem 0.3rem 0 auto;
+    margin-top: 0.7rem;
+    border-top: 1px solid var(--grey);
+    width: 100%;
+    padding: 0.5rem 1rem;
+    justify-content: center;
   }
 
   .header-wrapper {

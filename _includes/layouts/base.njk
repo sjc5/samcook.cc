@@ -26,6 +26,13 @@
     />
     <link rel="apple-touch-icon" sizes="400x400" href="/img/prof.jpg" />
     <link rel="icon" type="image/png" sizes="400x400" href="/img/favicon.png" />
+
+    <link rel="prefetch" href="/" as="document" />
+    {%- for entry in collections.all | eleventyNavigation %}
+    <link rel="prefetch" href="{{ entry.url | url }}" as="document" />
+    {%- endfor %}
+    <link rel="prefetch" href="/tags/" as="document" />
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@telekstr" />
     <meta name="twitter:creator" content="@telekstr" />
