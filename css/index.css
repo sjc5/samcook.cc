@@ -97,7 +97,7 @@ body {
   --bg: #ddd;
   --fg: rgb(14, 11, 11);
   --overlay: #7773;
-  --grey: #777a;
+  --grey: #777c;
   --lightblue: #47a7;
 }
 
@@ -105,7 +105,7 @@ body.dark {
   --bg: rgb(14, 11, 11);
   --fg: #ddd;
   --overlay: #7772;
-  --grey: #7777;
+  --grey: #9997;
   --lightblue: #47aa;
 }
 
@@ -157,11 +157,6 @@ header {
   align-items: center;
   padding: 12px calc(12px + 1vw - 0.35rem) 12px calc(12px + 1vw);
   background-color: var(--overlay);
-}
-
-.logo,
-.logo-extend {
-  white-space: nowrap;
 }
 
 .header-wrapper {
@@ -246,6 +241,7 @@ mark {
   /* Needs prefixing */
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+  opacity: 0.87;
 }
 
 .inline-p {
@@ -262,7 +258,7 @@ ol li:not(:last-child) {
 }
 
 ul {
-  padding-left: 1.5em;
+  padding-left: 1.4rem;
 }
 
 li {
@@ -286,6 +282,11 @@ tt {
   padding-bottom: 0.5em;
 }
 
+.logo,
+.logo-extend {
+  white-space: nowrap;
+}
+
 .logo-wrapper {
   display: flex;
   align-items: center;
@@ -301,13 +302,11 @@ tt {
   font-size: 1rem;
   margin: 0;
   text-transform: uppercase;
-  /* font-weight: normal; */
   letter-spacing: 0.07em;
 }
 
 .logo-extend {
   font-size: 0.87rem;
-  opacity: 0.87;
 }
 
 h1,
@@ -394,6 +393,11 @@ h3 {
 .hashtag {
   color: var(--grey);
   text-decoration: none;
+  font-weight: bold;
+}
+
+h2 .hashtag {
+  padding-right: 1px;
 }
 
 .blog-nav {
@@ -453,7 +457,7 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-bottom: 1.3rem;
+    padding-bottom: 1rem;
   }
 
   nav {
