@@ -89,7 +89,7 @@
   font-family: "JetBrains Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 150%;
+  line-height: 1.7;
   letter-spacing: 0.02em;
 }
 
@@ -214,14 +214,16 @@ img {
   max-height: 12rem;
   max-width: 12rem;
   border-radius: 10px;
+  margin: 0.23rem 0;
 }
 
 a {
   color: var(--fg);
-  border-bottom: 2px solid var(--grey);
-  text-decoration: none;
   padding-bottom: 1px;
   opacity: 0.7;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--grey);
+  text-underline-offset: 5px;
 }
 
 a:hover,
@@ -292,12 +294,12 @@ tt {
 .logo-anchor {
   margin-right: 0.5rem;
   border: none;
+  text-decoration: none;
 }
 
 .logo {
   font-size: 1rem;
   margin: 0;
-  text-decoration: none;
   text-transform: uppercase;
   /* font-weight: normal; */
   letter-spacing: 0.07em;
@@ -391,7 +393,7 @@ h3 {
 
 .hashtag {
   color: var(--grey);
-  padding-right: 1px;
+  text-decoration: none;
 }
 
 .blog-nav {
@@ -438,6 +440,7 @@ hr {
   font-style: normal;
   font-size: 80%;
   border-bottom: none;
+  text-decoration: none;
 }
 
 .direct-link:hover {
@@ -445,7 +448,7 @@ hr {
   border-bottom: none;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 519px) {
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -454,7 +457,7 @@ hr {
   }
 
   nav {
-    margin-top: 0.3rem;
+    margin: 0.3rem 0.3rem 0 auto;
   }
 
   .header-wrapper {

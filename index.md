@@ -3,9 +3,9 @@ layout: layouts/home.njk
 title: Sam Cook
 ---
 
-Hello, world. 👋
+Hello, world.
 
-I'm Sam Cook, a React developer, UI designer, web3 enthusiast and electric guitarist.
+I'm Sam Cook, a React developer, UI designer, electric guitarist and web3 enthusiast.
 
 <ul>
   <li class="arrow-list">
