@@ -5,6 +5,7 @@ layout: layouts/other.njk
 title: Tags
 section: Blog
 ---
+
 ## Tags
 
 {% set myTags = collections.tagList | sort %}
