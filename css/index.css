@@ -211,8 +211,8 @@ nav > *:not(:last-child) {
 }
 
 img {
-  max-height: 17rem;
-  max-width: 17rem;
+  max-height: 12rem;
+  max-width: 12rem;
   border-radius: 10px;
 }
 
