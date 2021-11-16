@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ metadata.title }} {% if title !== metadata.title %}– {{ section }} {% endif %}{% if section == "Blog" %}– {{ title }} {% endif %}</title>
   <meta name="description" content="{{ description or metadata.description }}">
-  
-  <link rel="preload" href="{{ '/css/index.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ '/css/index.css' | url }}"></noscript>
-
+  <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
   <link rel="alternate" href="{{ metadata.url }}{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   <link rel="alternate" href="{{ metadata.url }}{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
   <link rel="apple-touch-icon" sizes="400x400" href="/img/prof.jpg">
