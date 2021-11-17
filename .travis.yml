@@ -3,7 +3,7 @@ node_js:
   - 12
 before_script:
   - npm install @11ty/eleventy -g
-script: eleventy --pathprefix="/sjc/"
+script: eleventy --pathprefix="/samcook.cc/"
 deploy:
   local-dir: _site
   provider: pages

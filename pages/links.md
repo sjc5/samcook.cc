@@ -17,9 +17,9 @@ section: Links
     <a href="https://github.com/telekstr" target="_blank" rel="noreferrer">GitHub</a>
   </li>
   <li class="arrow-list">
-    <a href="{{ "/contact/" | url }}">Contact Info</a>
+    <a href="{{ "/contact/" | url }}">Email</a>
   </li>
   <li class="arrow-list">
-    <a href="{{ "/feed/feed.xml" | url }}" target="_blank" rel="noreferrer">Blog RSS Feed</a>
+    <a href="{{ "/feed/feed.xml" | url }}" target="_blank" rel="noreferrer">RSS</a>
   </li>
 </ul>

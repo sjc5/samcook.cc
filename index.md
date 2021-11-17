@@ -9,16 +9,16 @@ I'm Sam Cook, a React developer, UI designer, electric guitarist and web3 enthus
 
 <ul>
   <li class="arrow-list">
-    Learn more <a href="{{ 'about/' | url }}">about me</a>.
+    Learn <a href="{{ 'about/' | url }}">about me</a>.
   </li>
   <li class="arrow-list">
     Read <a href="{{ 'blog/' | url }}">my blog</a>.
   </li>
   <li class="arrow-list">
-    Check out <a href="https://github.com/telekstr" target="_blank" rel="noreferrer">my projects</a>.
-  </li>
-  <li class="arrow-list">
     Visit <a href="{{ 'links/' | url }}">my links</a>.
+  </li>
+    <li class="arrow-list">
+    Send me an <a href="{{ 'contact/' | url }}">email</a>.
   </li>
 </ul>
 

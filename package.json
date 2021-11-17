@@ -1,5 +1,5 @@
 {
-  "name": "sjc.sh",
+  "name": "samcook.cc",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",

@@ -1,21 +1,21 @@
 {
   "title": "Sam Cook",
-  "url": "https://sjc.sh",
+  "url": "https://samcook.cc",
   "language": "en",
   "description": "Sam Cook's website",
   "feed": {
     "subtitle": "I don't always write, but when I do, I do it here.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://sjc.sh"
+    "id": "https://samcook.cc"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://sjc.sh/feed/feed.json"
+    "url": "https://samcook.cc/feed/feed.json"
   },
   "author": {
     "name": "Sam Cook",
-    "email": "email@sjc.sh",
-    "url": "https://sjc.sh"
+    "email": "email@samcook.cc",
+    "url": "https://samcook.cc"
   }
 }

@@ -1,9 +1,9 @@
 ---
 layout: layouts/home.njk
 permalink: /contact/
-description: Contact sjc
+description: Contact Sam Cook
 title: Contact
 section: Contact
 ---
 
-Email address: 'email at sjc dot sh'
+Email address: 'email at samcook dot cc'

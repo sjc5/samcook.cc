@@ -1,7 +1,7 @@
-# sjc-11ty
+# samcook.cc
 
 ## Sam's personal website / blog (built with [11ty](https://11ty.dev))
 
-Live Site: [sjc.sh](https://sjc.sh)
+Live Site: [samcook.cc](https://samcook.cc)
 
 Copyright © Sam Cook
