@@ -11,10 +11,10 @@ section: Links
 
 <ul>
   <li class="arrow-list">
-    <a href="https://twitter.com/telekstr" target="_blank" rel="noreferrer">Twitter</a>
+    <a href="https://twitter.com/samcookdev" target="_blank" rel="noreferrer">Twitter</a>
   </li>
   <li class="arrow-list">
-    <a href="https://github.com/telekstr" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="https://github.com/sjc5" target="_blank" rel="noreferrer">GitHub</a>
   </li>
   <li class="arrow-list">
     <a href="{{ "/contact/" | url }}">Email</a>
