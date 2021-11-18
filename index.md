@@ -5,7 +5,7 @@ title: Sam Cook
 
 Hello, world.
 
-I'm Sam Cook, a React developer, UI designer, electric guitarist and web3 enthusiast.
+I'm Sam Cook, a React developer, UI designer, electric guitarist and web3-ist.
 
 <ul>
   <li class="arrow-list">

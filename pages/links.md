@@ -17,6 +17,9 @@ section: Links
     <a href="https://github.com/sjc5" target="_blank" rel="noreferrer">GitHub</a>
   </li>
   <li class="arrow-list">
+    <a href="https://www.youtube.com/channel/UCv-4pNh8Sbg_cSnWc1D_pCw" target="_blank" rel="noreferrer">YouTube</a>
+  </li>
+  <li class="arrow-list">
     <a href="{{ "/contact/" | url }}">Email</a>
   </li>
   <li class="arrow-list">
