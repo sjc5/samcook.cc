@@ -5,17 +5,17 @@ title: Sam Cook
 
 Hello, world.
 
-I'm Sam Cook, a React developer, UI designer, electric guitarist and web3-ist.
+I'm Sam Cook, a freelance React developer and UI designer, electric guitarist, part-time corporate lawyer and budding web3-ist.
 
 <ul>
   <li class="arrow-list">
-    Learn <a href="{{ 'about/' | url }}">about me</a>.
+    Learn more <a href="{{ 'about/' | url }}">about me</a>.
   </li>
   <li class="arrow-list">
-    Read <a href="{{ 'blog/' | url }}">my blog</a>.
+    Check out <a href="{{ 'blog/' | url }}">my blog</a>.
   </li>
   <li class="arrow-list">
-    Visit <a href="{{ 'links/' | url }}">my links</a>.
+    Peruse <a href="{{ 'links/' | url }}">my links</a>.
   </li>
     <li class="arrow-list">
     Send me an <a href="{{ 'contact/' | url }}">email</a>.

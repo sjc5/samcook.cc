@@ -9,8 +9,9 @@ title: About
 section: About
 ---
 
-- I'm a React developer and UI designer focused on making clean, fast, resilient and privacy-friendly websites and apps. If you'd like to work together, please [get in touch]({{ "/contact/" | url }}).
-- I'm the creator of <a href="https://talkjot.co" target="_blank" rel="noreferrer">TalkJot</a>, a cross-platform mobile app that makes it easy to email yourself voice-to-text notes.
-- My intellectual interests include philosophy, logic, writing, psychology, privacy, the art of decision-making, startups and decentralized, freedom-enhancing technologies.
+- I'm a freelance React developer and UI designer focused on making clean, fast, resilient and privacy-friendly websites and apps.
+- I am very excited about web3 and other decentralized, freedom-enhancing technologies.
+- I have a J.D. degree (full ride, second in class).
+- I was a full-time corporate lawyer for about five years before shifting my focus to building. A few corporate clients still occupy a slice of my time, but these days I prefer to write code than contracts. I am <a href="/blog/rules/#rule-7" target="_blank" rel="noreferrer" target="_blank" rel="noreferrer">not your lawyer</a>.
+- My interests include philosophy, logic, writing, psychology, privacy, the art of decision-making, startups and investing.
 - My hobbies include playing electric guitar, recording music and taking pictures.
-- I have a B.A. degree and a J.D. degree.

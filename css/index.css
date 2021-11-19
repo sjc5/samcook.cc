@@ -240,13 +240,17 @@ mark {
   text-decoration: none;
   border-radius: 3px;
   background-color: var(--fg);
-  color: var(--bg);
   display: inline;
   padding: 2px 7px;
   /* Needs prefixing */
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   opacity: 0.87;
+}
+
+mark,
+mark * {
+  color: var(--bg);
 }
 
 .inline-p {
