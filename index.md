@@ -5,7 +5,7 @@ title: Sam Cook
 
 Hello, world.
 
-I'm Sam Cook, a freelance React developer and UI designer, electric guitarist, part-time corporate lawyer and budding web3-ist.
+I'm Sam Cook, a React developer and UI designer, electric guitarist, reformed corporate lawyer and web3 enthusiast.
 
 <ul>
   <li class="arrow-list">
