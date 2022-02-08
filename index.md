@@ -12,7 +12,10 @@ I'm Sam Cook, a React developer and UI designer, electric guitarist, reformed co
     Learn more <a href="{{ 'about/' | url }}">about me</a>.
   </li>
   <li class="arrow-list">
-    Check out <a href="{{ 'blog/' | url }}">my blog</a>.
+    Check out <a href="{{ 'projects/' | url }}">my projects</a>.
+  </li>
+  <li class="arrow-list">
+    Read <a href="{{ 'blog/' | url }}">my blog</a>.
   </li>
   <li class="arrow-list">
     Peruse <a href="{{ 'links/' | url }}">my links</a>.
