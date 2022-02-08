@@ -21,13 +21,13 @@ section: Projects
   - This site, built from scratch using 11ty. It gets a perfect 100/100/100/100 on Lighthouse!
   - <a href="https://github.com/sjc5/samcook.cc" target="_blank">source (11ty)</a>
 - <a href="https://talkjot.co/" target="_blank">talkjot.co</a> (Feb. 2020)
-  - A mobile app I built and deployed using React Native. The landing page was built with 11ty.
+  - A mobile app I built and deployed using React Native. It's currently live (and free!) in the Apple App Store and Google Play Store. The landing page was built with 11ty.
   - <a href="https://github.com/sjc5/talkjot-react-native" target="_blank">source (React Native)</a> / <a href="https://github.com/sjc5/talkjot-landing-page" target="_blank">source (11ty)</a>
 - <a href="https://montyhall.io/" target="_blank">montyhall.io</a> (Jan. 2020)
   - A vanilla JS single page app / browser game that helps players learn / experience the reasoning behind the counterintuitive Monty Hall problem.
   - <a href="https://github.com/sjc5/monty-hall-problem-simulator" target="_blank">source (vanilla JS)</a>
 
-## Larger Professional Projects I've Helped Build
+## Larger Professional Projects
 
 - <a href="https://holaplex.com/" target="_blank">holaplex.com</a> (Dec. 2021 - Present)
   - Web3 NFT marketplace built on Solana.
