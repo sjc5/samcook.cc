@@ -9,7 +9,7 @@ title: Projects
 section: Projects
 ---
 
-## Open Source Projects I've Built
+## Smaller Open Source Projects I've Built
 
 - <a href="https://saygif.com/" target="_blank">saygif.com</a> (Nov. 2021)
   - A React app and smart contract deployed on Rinkeby testnet that allows users to vote on the proper pronunciation of the word "GIF" via MetaMask.
@@ -27,7 +27,7 @@ section: Projects
   - A vanilla JS single page app / browser game that helps players learn / experience the reasoning behind the counterintuitive Monty Hall problem.
   - <a href="https://github.com/sjc5/monty-hall-problem-simulator" target="_blank">source (vanilla JS)</a>
 
-## Professional Projects I've Helped Build
+## Larger Professional Projects I've Helped Build
 
 - <a href="https://holaplex.com/" target="_blank">holaplex.com</a> (Dec. 2021 - Present)
   - Web3 NFT marketplace built on Solana.
