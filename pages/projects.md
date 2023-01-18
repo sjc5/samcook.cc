@@ -11,6 +11,9 @@ section: Projects
 
 ## Smaller Open Source Projects I've Built
 
+- <a href="https://github.com/sjc5/interactive-typesafe-remix/" target="_blank">Interactive Typesafe Remix Starter Repo</a>
+  - A Remix starter template providing a TRPC-style DX using simple helpers that build on Remix primitives. Uses Zod heavily.
+  - <a href="https://github.com/sjc5/interactive-typesafe-remix/" target="_blank">source (Remix)</a>
 - <a href="https://saygif.com/" target="_blank">saygif.com</a>
   - A React app and smart contract deployed on Rinkeby testnet that allows users to vote on the proper pronunciation of the word "GIF" via MetaMask.
   - <a href="https://github.com/sjc5/say-gif-react-app" target="_blank">source (React)</a> / <a href="https://github.com/sjc5/say-gif-smart-contract" target="_blank">source (Solidity)</a>
@@ -29,6 +32,9 @@ section: Projects
 
 ## Larger Professional Projects I've Helped Build As a Team Member
 
+- <a href="https://gamma.io/" target="_blank">Gamma.io</a> (front-end lead)
+  - Web3 NFT marketplace in the Stacks ecosystem.
+  - Stack: NextJS, TypeScript, TRPC, Tailwind, Prisma (closed source)
 - <a href="https://holaplex.com/" target="_blank">holaplex.com</a>
   - Web3 NFT marketplace built on Solana.
   - <a href="https://github.com/holaplex" target="_blank">source (NextJS, TypeScript)</a>
